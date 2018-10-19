@@ -166,6 +166,7 @@ def local_group_delay(phase):
     # return the local group delay
     return unwrapped_phase
 
+
 # alias
 lgd = local_group_delay
 
@@ -676,5 +677,6 @@ class LocalGroupDelay(_PropertyMixin, np.ndarray):
     def bin_frequencies(self):
         """Bin frequencies."""
         return self.stft.bin_frequencies
+
 
 LGD = LocalGroupDelay
